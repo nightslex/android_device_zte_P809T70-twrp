@@ -33,13 +33,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true
 
-# Time Zone data for recovery
-PRODUCT_COPY_FILES += \
-    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
-
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := santoni
-PRODUCT_NAME := full_santoni
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 4
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := P809T70
+PRODUCT_NAME := full_P809T70
+PRODUCT_BRAND := Zte
+PRODUCT_MODEL := Turkcell T70
+PRODUCT_MANUFACTURER := Zte
