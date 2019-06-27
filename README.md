@@ -1,22 +1,20 @@
-TeamWin Recovery Project
+## TWRP device tree for Turkcell T70 (P809T70) Zte Blade A506 (P809F52)
 
-Device configuration for Xiaomi Redmi 4[IN]/4X  (_santoni_)
-=====================================================
+Add to `.repo/local_manifests/P809T70.xml`:
 
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | Octa-core 1.4 GHz Cortex-A53
-CHIPSET | Qualcomm MSM8937 Snapdragon 435
-GPU     | Adreno 505
-Memory  | 2 GB/3 GB/4 GB
-Shipped Android Version | Android 6.0.1 with MIUI 8
-Storage | 16 GB/32 GB
-MicroSD | Up to 256 GB (Hybrid)
-Battery | 41000 mAh (non-removable)
-Dimensions | 139.2 x 70 x 8.7 mm
-Display | 720 x 1280 pixels, 5.0" IPS
-Rear Camera  | 13.0 MP, LED flash
-Front Camera | 5.0 MP
-Release Date | May 2017
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<project name="nightslex/android_device_zte_P809T70-twrp" path="device/zte/P809T70"  remote="github" revision="android-8.1" />
+</manifest>
+```
 
-![Xiaomi Redmi 4[IN]/4X](https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-4x-2.jpg "Xiaomi Redmi 4[IN]/4X")
+Then run `repo sync` to check it out.
+
+To build:
+
+```sh
+. build/envsetup.sh
+lunch omni_P809T70-eng
+mka recoveryimage
+```
