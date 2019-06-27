@@ -39,7 +39,13 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_CMDLINE += selinux=1 enforcing=0 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --board R2A73030BR00
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/recovery/kernel
+BOARD_KERNEL_SEPARATED_DT := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+TARGET_KERNEL_SOURCE := kernel/zte/msm8909-caf
+TARGET_KERNEL_CONFIG := t70_defconfig
+
+
+
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := false
