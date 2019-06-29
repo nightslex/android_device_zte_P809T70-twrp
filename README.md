@@ -19,4 +19,4 @@ Rear Camera  | 13.0 MP, LED flash
 Front Camera | 5.0 MP
 Release Date | May 2016
 
-![Turkcell T70[IN]/T70](https://cdn3.epey.com/resim/55381/m_turkcell-t70-2.png "Turkcell T70[IN]/T70")
+![Xiaomi Redmi 4[IN]/4X](https://cdn3.epey.com/resim/127973/m_zte-blade-a506-2gb-1.png "Xiaomi Redmi 4[IN]/4X")
