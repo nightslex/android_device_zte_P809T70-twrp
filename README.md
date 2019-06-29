@@ -1,21 +1,22 @@
-## TWRP device tree for Turkcell T70 (P809T70) Zte Blade A506 (P809F52)
+TeamWin Recovery Project
 
-Add to `.repo/local_manifests/P809T70.xml`:
+Device configuration for Turkcell T70[IN]/T70  (_P809T70_)
+=====================================================
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-	<project name="nightslex/android_device_zte_P809T70-twrp" path="device/zte/P809T70"  remote="github" revision="android-8.1" />
-	<project name="nightslex/android_kernel_zte_msm8909-caf" path="kernel/zte/msm8909-caf"  remote="github" revision="cm-14.1" />	
-</manifest>
-```
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Octa-core 1.4 GHz Cortex-A53
+CHIPSET | Qualcomm MSM8937 Snapdragon 435
+GPU     | Adreno 505
+Memory  | 2 GB/3 GB/4 GB
+Shipped Android Version | Android 6.0.1 with MIUI 8
+Storage | 8 GB/16 GB
+MicroSD | Up to 128 GB (Hybrid)
+Battery | 2540 mAh (non-removable)
+Dimensions | 147.5 x 73 x 7.8 mm
+Display | 720 x 1280 pixels, 5.0" IPS
+Rear Camera  | 13.0 MP, LED flash
+Front Camera | 5.0 MP
+Release Date | May 2016
 
-Then run `repo sync` to check it out.
-
-To build:
-
-```sh
-. build/envsetup.sh
-lunch omni_P809T70-eng
-mka recoveryimage
-```
+![Turkcell T70[IN]/T70](https://cdn3.epey.com/resim/55381/m_turkcell-t70-2.png "Turkcell T70[IN]/T70")
